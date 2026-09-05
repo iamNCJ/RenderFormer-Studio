@@ -1,0 +1,85 @@
+schema_version: 1
+recipe_id: "v2/stage_05_16k_env_volume"
+family: "v2"
+partition_key: "render_v2_stage_05_16k_env_volume"
+export_profile: "src/renderformer/data/profiles/v2_training_raw.yaml"
+assets:
+  require_external_manifest: true
+template_corrections:
+  background_topology_debias: false
+  env_map_channel_shuffle: true
+render:
+  resolution: 512
+  num_views: 4
+  spp: 4096
+  texture_size: 32
+  texture_crop_resolution: 256
+  texture_target_resolution: 256
+  min_views: 2
+  include_background: false
+  use_heightmap_format: true
+templates:
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/corner-multi-object-patch.jsonc"
+    weight: 2
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/corner-multi-object.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/corner-single-object-patch.jsonc"
+    weight: 2
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/corner-single-object.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/no-ceil-box-multi-patch.jsonc"
+    weight: 2
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/no-ceil-box-multi.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/no-ceil-box-single-patch.jsonc"
+    weight: 2
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/no-ceil-box-single.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/plane-multi-object.jsonc"
+    weight: 2
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/plane-single-object.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/wall-multi-object-patch.jsonc"
+    weight: 2
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/wall-multi-object.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/wall-single-object-patch.jsonc"
+    weight: 2
+  - path: "src/renderformer/data/templates/full-new-volume/16k-env-volume/wall-single-object.jsonc"
+    weight: 1
+postprocess:
+  enabled: true
+  texture_encoder: "qwen_vae"
+  model_id: "Qwen/Qwen-Image"
+  revision: "75e0b4be04f60ec59a75f475837eced720f823b6"
+  subfolder: "vae"
+  torch_dtype: "float32"
+  triangle_batch_size: 256
+  keep_raw: false
+  drop_keys:
+    - "albedo_img"
+    - "diffuse_img"
+    - "glossy_img"
+    - "normal_img"
+  process_env_map: true
+historical:
+  sample_budget: null
+  seed: null
+  list_order: null
+known_gaps:
+  - sample_budget
+  - seed
+  - list_order
+artifacts:
+  historical_260120_paths:
+    path: "260120_16k_processed/paths.txt"
+    sources:
+      - recipe: "v2/260120_16k"
+        historical_rows: null
+    total_rows: null
+  historical_260206_paths:
+    path: "260206_16k-shuffle_processed/paths.txt"
+    sources:
+      - recipe: "v2/260206_16k_shuffle"
+        historical_rows: null
+    total_rows: null

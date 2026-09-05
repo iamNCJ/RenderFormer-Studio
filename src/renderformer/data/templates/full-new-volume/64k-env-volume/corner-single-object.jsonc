@@ -1,0 +1,200 @@
+{
+    "scene_name": "corner-single-object",
+    "version": "1.0",
+
+    "background_scene": [
+      {
+        "name": "floor",
+        "mesh_path": "templates/meshes/plane_uv.obj",
+        "transform": {
+          "translation": {
+            "x": [-0.05, 0.05],
+            "y": [-0.05, 0.05],
+            "z": [0.15, 0.25]
+          },
+          "rotation": {
+            "x": [-10, 10],
+            "y": [-10, 10],
+            "z": [-180, 180]
+          },
+          "scale": {
+            "x": [0.9, 1.35],
+            "y": [0.9, 1.35],
+            "z": [0.9, 1.35]
+          }
+        }
+      },
+      {
+        "name": "wall0",
+        "mesh_path": "templates/meshes/wall0_uv.obj",
+        "transform": {
+          "translation": {
+            "x": [-0.05, 0.05],
+            "y": [-0.25, 0.25],
+            "z": [-0.05, 0.05]
+          },
+          "rotation": {
+            "x": [-10, 10],
+            "y": [-180, 180],
+            "z": [-10, 10]
+          },
+          "scale": {
+            "x": [0.9, 1.35],
+            "y": [0.9, 1.35],
+            "z": [0.9, 1.35]
+          }
+        }
+      },
+      {
+        "name": "wall1",
+        "mesh_path": "templates/meshes/wall1_uv.obj",
+        "transform": {
+          "translation": {
+            "x": [-0.25, 0.25],
+            "y": [-0.05, 0.05],
+            "z": [-0.05, 0.05]
+          },
+          "rotation": {
+            "x": [-180, 180],
+            "y": [-10, 10],
+            "z": [-10, 10]
+          },
+          "scale": {
+            "x": [0.9, 1.35],
+            "y": [0.9, 1.35],
+            "z": [0.9, 1.35]
+          }
+        }
+      }
+    ],
+
+    "object_placement": {
+      "bounding_mesh": "templates/bbox/default.obj",
+      "object_constraints": {
+        "sphere_scale_range": [1.0, 1.8],
+        "min_spacing": 0.05,
+        "max_attempts": 1000
+      },
+      "objects": {
+        "list_path": "external/objects-3968.txt",
+        "base_path": "external/objects",
+        "count": {
+          "min": 8,
+          "max": 16
+        },
+        "rotation": {
+            "x": [-180, 180],
+            "y": [-180, 180],
+            "z": [-180, 180]
+        }
+      }
+    },
+
+    // camera & light is placed after the scene is normalized
+    "camera": {
+      "shell_path": "templates/camera/corner-cam.obj",
+      "look_at": {
+        "target": [0, 0, 0],
+        "deviation_range": [-0.2, 0.2]
+      },
+      "up": {
+        "direction": [0, 0, 1],
+        "deviation_range": [-0.1, 0.1]
+      },
+      "fov": [30, 60],
+      "distance_range": [1.5, 2.0]
+    },
+
+    "lighting": {
+      "mesh_path": "templates/lighting/tri.obj",
+      "shell_path": "templates/lighting/corner-lighting.obj",
+      "min_num": 1,
+      "max_num": 8,
+      "look_at": {
+        "target": [0, 0, 0],
+        "deviation_range": [-0.2, 0.2]
+      },
+      "distance_range": [2.1, 2.7],
+      "rotation": {
+        "x": [-180, 180],
+        "y": [-180, 180],
+        "z": [-180, 180]
+      },
+      "scale": {
+        "x": [2.0, 2.5],
+        "y": [2.0, 2.5],
+        "z": [2.0, 2.5]
+      },
+      "power_range": [2500, 5000]
+    },
+
+    "env_map": {
+        "list_path": "external/envmaps-filtered-channel-shuffle-blank.txt",
+        "base_path": "external/envmaps/filtered-channel-shuffle-512",
+        "rotation": {
+            "x": [-180, 180],
+            "y": [-180, 180],
+            "z": [-180, 180]
+        },
+        "strength_range": [1.0, 1.0]
+    },
+
+    "material": {
+        "spec_diffuse_sum_range": [0.9, 1.0],
+        "spec_diffuse_ratio_range": [0.0, 1.0],
+        "roughness_range": [0.01, 1.0],
+        "diffuse_rgb_range": [0.0, 1.0],
+        "smooth_shading_ratio": 0.5,
+        "rand_tri_diffuse_ratio": 0.0,
+        "texture_map_ratio": 1.0,
+        "texture_map_base_path": "external/textures/matsynth",
+        "texture_map_list_path": "external/textures-matsynth.txt",
+        "base_color_range": [0.0, 1.0],
+        "metallic_range": [0.0, 1.0],
+        "transmission_weight_range": [0.0, 1.0],
+        "ior_range": [1.0, 2.5],
+        "use_heightmap": true,
+        "material_type_probabilities": {
+          "svbrdf_diffuse_specular": 1,
+          "homo_diffuse_specular": 2,
+          "svbrdf_metallic_roughness": 1,
+          "homo_metallic_roughness": 2,
+          "homo_metallic_roughness_transmission": 3
+        }
+    },
+
+    "volume": {
+        "probability": 0.67,
+        "count": {
+            "min": 0,
+            "max": 2
+        },
+        "transform": {
+            "translation": {
+                "x": [-0.2, 0.2],
+                "y": [-0.2, 0.2],
+                "z": [-0.2, 0.2]
+            },
+            "rotation": {
+                "x": [-180, 180],
+                "y": [-180, 180],
+                "z": [-180, 180]
+            },
+            "scale": {
+                "x": [0.5, 0.75],
+                "y": [0.5, 0.75],
+                "z": [0.5, 0.75]
+            }
+        },
+        "scattering_scale_range": [0.1, 5.0],
+        "absorption_scale_range": [0.1, 5.0],
+        "volume_generation_params": {
+            "freq": 2.0,
+            "tau0": 0.35,
+            "tau1": 0.65,
+            "alpha": 1.0,
+            "use_sphere_falloff": true,
+            "transpose": true
+        }
+    }
+}

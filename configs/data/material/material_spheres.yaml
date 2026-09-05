@@ -1,0 +1,69 @@
+schema_version: 1
+recipe_id: material/material_spheres
+pipeline_id: renderformer-material-spheres-v1
+
+# These fields are part of the MaterialAutoencoder checkpoint contract.
+preprocessing:
+  mode: log10_1p
+  alpha_policy: premultiply_then_drop
+  output_channels: 3
+
+# Recovered common setup for all three historical material families. The
+# environment-map path is a runtime input so this public config has no private
+# or machine-specific path.
+render:
+  resolution: 256
+  samples_per_pixel: 1024
+  sphere_segments: 128
+  sphere_rings: 128
+  camera_position: [3.0, 0.0, 0.0]
+  camera_target: [0.0, 0.0, 0.0]
+  camera_up: [0.0, 0.0, 1.0]
+  fov_degrees: 39.6
+  environment_strength: 1.0
+  # Arithmetic-mean monochrome Uffizi probe used by the selected training run.
+  environment_map_sha256: b1da0a8259daeba85ecc338065aecf169e3e24ffa9dc2feda073a4440ac4faff
+  cycles_seed: 0
+  threads: 8
+
+principled_fixed:
+  subsurface_weight: 0.0
+  specular_ior_level: 1.0
+  specular_tint_rgb: [1.0, 1.0, 1.0]
+  anisotropic: 0.0
+  anisotropic_rotation: 0.5
+  sheen_weight: 0.0
+  sheen_tint_rgb: [0.0, 0.0, 0.0]
+  coat_weight: 0.0
+  coat_roughness: 0.0
+  emission_rgb: [0.0, 0.0, 0.0]
+  alpha: 1.0
+
+families:
+  # Actual directory count used by the selected material-autoencoder run.
+  principled_metallic:
+    count: 60110
+    validation_count: 128
+    base_color_range: [0.0, 1.0]
+    metallic_range: [0.0, 1.0]
+    roughness_range: [0.01, 1.0]
+    transmission_weight: 0.0
+    ior: 1.5
+
+  # Actual directory count used by the selected material-autoencoder run.
+  diffuse_specular:
+    count: 60000
+    validation_count: 128
+    diffuse_color_range: [0.0, 1.0]
+    specular_color_range: [0.0, 1.0]
+    roughness_range: [0.01, 1.0]
+
+  # Actual directory count used by the selected material-autoencoder run.
+  principled_transmission:
+    count: 100000
+    validation_count: 128
+    base_color_range: [0.0, 1.0]
+    metallic_range: [0.0, 1.0]
+    roughness_range: [0.01, 1.0]
+    transmission_power: 0.7
+    ior_range: [1.0, 2.5]

@@ -1,0 +1,4 @@
+{
+    "exclude": ["results", "logs", "wandb", "**/__pycache__"],
+    "extraPaths": ["src"]
+}

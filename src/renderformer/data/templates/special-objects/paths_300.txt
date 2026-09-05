@@ -1,0 +1,4 @@
+cube.obj
+ico_sub1.obj
+ico_sub2.obj
+plane.obj

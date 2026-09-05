@@ -1,0 +1,84 @@
+schema_version: 1
+recipe_id: "v1/stage_02_4k_512res"
+family: "v1"
+partition_key: "render_v1_stage_02_4k_512res"
+export_profile: "src/renderformer/data/profiles/v1_training_rf1.yaml"
+assets:
+  require_external_manifest: true
+template_corrections:
+  background_topology_debias: true
+  env_map_channel_shuffle: false
+render:
+  resolution: 512
+  num_views: 4
+  spp: 4096
+  texture_size: 32
+  texture_crop_resolution: null
+  texture_target_resolution: null
+  min_views: 0
+  include_background: false
+  use_heightmap_format: false
+templates:
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/high-res/corner-multi-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/high-res/corner-single-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/high-res/no-ceil-box-multi-patch.jsonc"
+    weight: 2
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/high-res/no-ceil-box-multi.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/high-res/no-ceil-box-single-patch.jsonc"
+    weight: 2
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/high-res/no-ceil-box-single.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/high-res/plane-multi-object.jsonc"
+    weight: 4
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/high-res/plane-single-object.jsonc"
+    weight: 4
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/high-res/wall-multi-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/high-res/wall-single-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/more-tri/corner-multi-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/more-tri/no-ceil-box-multi.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/more-tri/plane-multi-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250428_oxl_high_res/more-tri/wall-multi-object.jsonc"
+    weight: 3
+postprocess:
+  enabled: false
+historical:
+  sample_budget: null
+  seed: null
+  list_order: null
+known_gaps:
+  - sample_budget
+  - seed
+  - list_order
+artifacts:
+  historical_250416_paths:
+    path: "250416_high_res_fixed_bsdf_dev/paths.txt"
+    sources:
+      - recipe: "v1/250416_high_res_fixed_bsdf_dev"
+        historical_rows: null
+    total_rows: null
+  historical_250428_merged:
+    path: "250428_oxl_high_res/merged.txt"
+    sources:
+      - recipe: "v1/250416_high_res_fixed_bsdf_dev"
+        historical_rows: 2014579
+      - recipe: "v1/250428_oxl_high_res"
+        historical_rows: 6986617
+    total_rows: 9001196
+  historical_250510_merged:
+    path: "250510_fix_template_bias/merged.txt"
+    sources:
+      - recipe: "v1/250416_high_res_fixed_bsdf_dev"
+        historical_rows: 1343338
+      - recipe: "v1/250428_oxl_high_res"
+        historical_rows: 4656662
+      - recipe: "v1/250510_fix_template_bias"
+        historical_rows: 4576280
+    total_rows: 10576280

@@ -1,0 +1,20 @@
+format: v1
+schema_version: 1
+unsupported_policy: error
+allowed_material_types:
+  - diffuse_specular
+allowed_spatial_variation:
+  - uniform
+  - per_triangle
+# v1 (RF1) does not carry any of these features.
+allow_env_map: false
+allow_volume: false
+allow_heightmap: false
+material_encoding:
+  format: rf_v1_diffuse_specular_13ch
+texture_export:
+  mode: raw_only
+  encode_timing: inline
+  spatial_encoding: constant_1x1_expanded_to_32
+render_passes:
+  img: true

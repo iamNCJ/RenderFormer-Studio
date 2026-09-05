@@ -1,0 +1,112 @@
+[project]
+authors = [{ name = "NCJ", email = "me@ncj.wiki" }]
+description = "RenderFormer data, training, and inference code"
+license = { file = "LICENSE" }
+license-files = [
+  "LICENSE",
+  "THIRD_PARTY_NOTICES.md",
+  "licenses/*.txt",
+  "src/renderformer/ops/LICENSE.txt",
+  "src/renderformer/ops/NOTICE",
+]
+name = "renderformer-studio"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+version = "0.1.0"
+dependencies = [
+  "dacite>=1.9.2,<2",
+  "h5py>=3.14.0,<4",
+  "jsoncomment>=0.4.2,<0.5",
+  "numpy>=1.26.4,<3",
+  "pyyaml>=6.0.2,<7",
+]
+
+[project.optional-dependencies]
+# Local mesh normalization, slicing, and the default trimesh simplifier.
+# Blender-backed UV unwrapping is part of the blender extra.
+geometry = [
+  "fast-simplification>=0.1,<1",
+  "libigl==2.5.1",
+  "pymeshlab>=2023.12",
+  "scikit-image>=0.25,<0.26",
+  "trimesh>=4.7.1,<5",
+]
+# Blender/Cycles scene generation. The supported bpy wheel is pinned on PyPI.
+blender = [
+  "bpy==4.5.10",
+  "bpy-helper==0.0.13",
+  "huggingface-hub>=0.34.0,<2",
+  "imageio>=2.37.0,<3",
+  "opencv-contrib-python-headless>=4.11.0.86,<4.12",
+  "scipy>=1.11,<2",
+  "simple-exr==0.0.0",
+  "torch>=2.7.0,<3",
+  "torchvision>=0.22.0,<1",
+  "tqdm>=4.67.1,<5",
+  "trimesh>=4.7.1,<5",
+]
+# CPU/PyTorch H5 loaders. NVIDIA DALI stays in the CUDA environment because
+# its wheels require NVIDIA's package index.
+loaders = [
+  "imageio>=2.37.0,<3",
+  "natsort>=8.4.0,<9",
+  "torch>=2.7.0,<3",
+]
+# Learned V2 texture/env-map postprocessing.
+textures = [
+  "diffusers>=0.35.0,<1",
+  "roma>=1.5.3,<2",
+  "torch>=2.7.0,<3",
+]
+# Repository-level V1/V2 inference entrypoints.
+inference = [
+  "diffusers>=0.35.0,<1",
+  "einops>=0.8.1,<0.9",
+  "huggingface-hub>=0.34.0,<2",
+  "imageio[ffmpeg]>=2.37.0,<3",
+  "jaxtyping>=0.3.2,<0.4",
+  "natsort>=8.4.0,<9",
+  "opencv-contrib-python-headless>=4.12.0.88,<5",
+  "roma>=1.5.3,<2",
+  "safetensors>=0.5,<1",
+  "scipy>=1.11,<2",
+  "simple-ocio",
+  "torch>=2.7.0,<3",
+  "trimesh>=4.7.1,<5",
+  "typing-extensions>=4.12,<5",
+]
+# Training entrypoints. Install the CUDA Conda environment (or DALI manually)
+# for the accelerated H5 loader backend.
+training = [
+  "accelerate>=1.9.0,<2",
+  "diffusers>=0.35.0,<1",
+  "einops>=0.8.1,<0.9",
+  "huggingface-hub>=0.34.0,<2",
+  "imageio>=2.37.0,<3",
+  "jaxtyping>=0.3.2,<0.4",
+  "lpips>=0.1.4,<0.2",
+  "natsort>=8.4.0,<9",
+  "ninja>=1.11.1.4,<2",
+  "pytorch-msssim>=1.0.0,<2",
+  "roma>=1.5.3,<2",
+  "safetensors>=0.5,<1",
+  "simple-exr==0.0.0",
+  "torch>=2.7.0,<3",
+  "torchmetrics>=1.7.4,<2",
+  "tqdm>=4.67.1,<5",
+  "tyro>=0.9.26,<0.10",
+  "typing-extensions>=4.12,<5",
+  "wandb>=0.21.0,<1",
+]
+[project.scripts]
+renderformer = "renderformer.cli.main:main"
+
+[build-system]
+build-backend = "hatchling.build"
+# Hatchling 1.32 emits Core Metadata 2.5, which Twine 6.2 cannot validate.
+# Keep release artifacts on the widely supported Metadata 2.4 format until
+# the publishing toolchain accepts 2.5.
+requires = ["hatchling>=1.27,<1.32"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/renderformer"]

@@ -1,0 +1,24 @@
+# Exact top-level dependencies for the Python 3.11 Blender/OpenVDB environment.
+# PyTorch and torchvision use a dedicated index in the Dockerfile or Conda
+# receipt; bpy is installed from PyPI with the exact version declared there.
+bpy-helper==0.0.13
+dacite==1.9.2
+diffusers==0.35.1
+fast-simplification==0.1.12
+h5py==3.14.0
+huggingface-hub==0.34.4
+imageio==2.37.0
+jsoncomment==0.4.2
+libigl==2.5.1
+numpy==1.26.4
+opencv-contrib-python-headless==4.11.0.86
+OpenEXR==3.3.4
+pillow==11.3.0
+pymeshlab==2023.12.post3
+pyyaml==6.0.2
+roma==1.5.3
+scipy==1.15.3
+scikit-image==0.25.2
+simple-exr==0.0.0
+tqdm==4.67.1
+trimesh==4.7.1

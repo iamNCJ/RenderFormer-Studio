@@ -1,0 +1,23 @@
+Stanford 3D Scanning Repository data notice
+
+Source: https://graphics.stanford.edu/data/3Dscanrep/
+Terms verified: 2026-08-31
+
+This file summarizes the source repository's published terms; it is not a
+standard SPDX license and does not replace the source page.
+
+The Stanford Computer Graphics Laboratory asks users to acknowledge the
+source of its data and models. It permits use for research and permits the
+models to be mirrored or redistributed without charge. Images may be
+published in scholarly articles or books with credit. Commercial use, or use
+in a product for sale other than a scholarly journal or book, requires
+Stanford's permission. The source page also asks that culturally or
+religiously significant models, including Lucy, be used respectfully.
+
+Local scope:
+
+- examples/rf1/objects/classical/bunny.obj
+- examples/rf1/objects/lucy/11k.obj
+
+The local files were converted, simplified, and/or remeshed for RenderFormer.
+See examples/rf1/ASSET_PROVENANCE.json for checksums and the exact mapping.

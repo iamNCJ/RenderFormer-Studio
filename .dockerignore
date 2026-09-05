@@ -1,0 +1,14 @@
+.git
+.pytest_cache
+.venv*
+**/__pycache__
+**/*.py[cod]
+*.egg-info
+*.h5
+*.exr
+*.blend
+checkpoints
+logs
+results*
+tmp
+wandb

@@ -1,0 +1,13 @@
+name: renderformer-cuda
+
+channels:
+  - nvidia/label/cuda-12.6.0
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - pip=25.1
+  - cuda-toolkit=12.6
+  - cuda-cudart=12.6
+  - libcurand-dev>=10.3.7.37,<11
+  - libxcrypt>=4.4.36,<5

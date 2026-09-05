@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "dataset": "renderformer/renderformer-video-data",
+  "sequences": [
+    {
+      "id": "marching-cubes",
+      "archive": "animations/marching-cubes.zip",
+      "input": "animations/marching-cubes",
+      "expected_frames": 791,
+      "tone_mapper": "agx"
+    },
+    {
+      "id": "man",
+      "archive": "animations/man.zip",
+      "input": "animations/man",
+      "expected_frames": 285,
+      "tone_mapper": "agx"
+    },
+    {
+      "id": "crab",
+      "archive": "animations/crab.zip",
+      "input": "animations/crab",
+      "expected_frames": 60,
+      "tone_mapper": "none"
+    },
+    {
+      "id": "gyroscope",
+      "archive": "animations/gyroscope.zip",
+      "input": "animations/gyroscope",
+      "expected_frames": 200,
+      "tone_mapper": "none"
+    },
+    {
+      "id": "robot",
+      "archive": "animations/robot.zip",
+      "input": "animations/robot",
+      "expected_frames": 96,
+      "tone_mapper": "none"
+    },
+    {
+      "id": "cascade-cube",
+      "archive": "animations/cascade-cube.zip",
+      "input": "animations/cascade-cube",
+      "expected_frames": 250,
+      "tone_mapper": "pbr_neutral"
+    },
+    {
+      "id": "constant-width-sim",
+      "archive": "simulations/constant-width-sim.zip",
+      "input": "simulations/constant-width-sim",
+      "expected_frames": 120,
+      "tone_mapper": "none"
+    },
+    {
+      "id": "box-rotation",
+      "archive": "simulations/box-rotation.zip",
+      "input": "simulations/box-rotation",
+      "expected_frames": 160,
+      "tone_mapper": "pbr_neutral"
+    },
+    {
+      "id": "bowling",
+      "archive": "simulations/bowling.zip",
+      "input": "simulations/bowling",
+      "expected_frames": 90,
+      "tone_mapper": "filmic"
+    },
+    {
+      "id": "cbox-bunny-roughness",
+      "archive": "teaser-scenes/cbox-bunny-roughness.zip",
+      "input": "teaser-scenes/cbox-bunny-roughness",
+      "expected_frames": 120,
+      "tone_mapper": "none"
+    },
+    {
+      "id": "cbox-roughness",
+      "archive": "teaser-scenes/cbox-roughness.zip",
+      "input": "teaser-scenes/cbox-roughness",
+      "expected_frames": 120,
+      "tone_mapper": "none"
+    },
+    {
+      "id": "compose-change-light",
+      "archive": "teaser-scenes/compose-change-light.zip",
+      "input": "teaser-scenes/compose-change-light",
+      "expected_frames": 120,
+      "tone_mapper": "none"
+    },
+    {
+      "id": "constant-width-fancy",
+      "archive": "teaser-scenes/constant-width-fancy.zip",
+      "input": "teaser-scenes/constant-width-fancy",
+      "expected_frames": 240,
+      "tone_mapper": "none"
+    },
+    {
+      "id": "tree-change-light",
+      "archive": "teaser-scenes/tree-change-light.zip",
+      "input": "teaser-scenes/tree-change-light",
+      "expected_frames": 120,
+      "tone_mapper": "none"
+    },
+    {
+      "id": "tree-rot-obj",
+      "archive": "teaser-scenes/tree-rot-obj.zip",
+      "input": "teaser-scenes/tree-rot-obj",
+      "expected_frames": 120,
+      "tone_mapper": "none"
+    }
+  ]
+}

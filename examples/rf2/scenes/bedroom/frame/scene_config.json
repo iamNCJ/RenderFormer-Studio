@@ -1,0 +1,525 @@
+{
+  "scene_name": "bedroom",
+  "version": "1.1.0",
+  "objects": {
+    "Cube": {
+      "mesh_path": "split/Cube.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "svbrdf_metallic_roughness",
+        "texture_map_path": "split/Cube",
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Cube_001": {
+      "mesh_path": "split/Cube_001.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "svbrdf_metallic_roughness",
+        "texture_map_path": "split/Cube_001",
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "light_0": {
+      "mesh_path": "split/light_0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": true,
+      "material": {
+        "material_type": "homo_diffuse_specular",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": {
+          "diffuse": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specular": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "roughness": 1.0
+        },
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          4500.0,
+          4500.0,
+          4500.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "ModernBedroom_BedFrame_0": {
+      "mesh_path": "split/ModernBedroom_BedFrame_0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.0861365795135498,
+            0.0861365795135498,
+            0.0861365795135498
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "ModernBedroom_Chair_0": {
+      "mesh_path": "split/ModernBedroom_Chair_0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.12545214593410492,
+            0.12545214593410492,
+            0.12545214593410492
+          ],
+          "metallic": 0.28959277272224426,
+          "roughness": 0.1742081344127655
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "ModernBedroom_Duvet_0": {
+      "mesh_path": "split/ModernBedroom_Duvet_0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "svbrdf_diffuse_specular",
+        "texture_map_path": "split/ModernBedroom_Duvet_0",
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "ModernBedroom_EndLamps_0": {
+      "mesh_path": "split/ModernBedroom_EndLamps_0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "ModernBedroom_EndTables_0": {
+      "mesh_path": "split/ModernBedroom_EndTables_0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.11974343657493591,
+            0.11974343657493591,
+            0.11974343657493591
+          ],
+          "metallic": 0.699999988079071,
+          "roughness": 0.20000000298023224
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "ModernBedroom_Meshes_0": {
+      "mesh_path": "split/ModernBedroom_Meshes_0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.0861368179321289,
+            0.0861368179321289,
+            0.0861368179321289
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "ModernBedroom_Pillows_0": {
+      "mesh_path": "split/ModernBedroom_Pillows_0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "plane": {
+      "mesh_path": "split/plane.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "svbrdf_metallic_roughness",
+        "texture_map_path": "split/plane",
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "wall0": {
+      "mesh_path": "split/wall0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "svbrdf_metallic_roughness",
+        "texture_map_path": "split/wall0",
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "wall1": {
+      "mesh_path": "split/wall1.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "svbrdf_metallic_roughness",
+        "texture_map_path": "split/wall1",
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    }
+  },
+  "cameras": [
+    {
+      "position": [
+        -0.75175940990448,
+        -0.8760728240013123,
+        -0.0950150191783905
+      ],
+      "look_at": [
+        -0.2511533498764038,
+        -0.022812068462371826,
+        -0.2410964071750641
+      ],
+      "up": [
+        0.0739227831363678,
+        0.12599681317806244,
+        0.9892725944519043
+      ],
+      "fov": 37.49999933598528
+    }
+  ],
+  "lighting": [],
+  "env_map": {
+    "env_map_path": "env_map.exr",
+    "rotation_x": 0.0,
+    "rotation_y": 0.0,
+    "rotation_z": 0.0,
+    "strength": 0.0
+  },
+  "volumes": null,
+  "wall_holes": null
+}

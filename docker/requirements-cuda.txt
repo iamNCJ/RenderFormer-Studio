@@ -1,0 +1,42 @@
+# Exact top-level dependency set for the CUDA 12.6 / Python 3.10 environment.
+# Torch and NVIDIA wheels are selected explicitly so PyPI cannot substitute a
+# CPU build. Transitive dependencies are validated by `pip check` at build time.
+--extra-index-url https://download.pytorch.org/whl/cu126
+--extra-index-url https://pypi.nvidia.com/
+
+accelerate==1.9.0
+dacite==1.9.2
+deepspeed==0.17.2
+diffusers==0.35.1
+einops==0.8.1
+h5py==3.14.0
+huggingface-hub==0.34.4
+imageio[ffmpeg]==2.37.0
+jaxtyping==0.3.2
+jsoncomment==0.4.2
+lpips==0.1.4
+natsort==8.4.0
+ninja==1.11.1.4
+numpy==2.2.6
+nvidia-dali-cuda120==1.50.0
+nvidia-npp-cu12==12.4.1.87
+opencv-contrib-python-headless==4.12.0.88
+opencolorio==2.4.2
+packaging==24.2
+pillow==11.3.0
+pytorch-msssim==1.0.0
+pyyaml==6.0.2
+roma==1.5.3
+safetensors==0.5.3
+scipy==1.15.3
+simple-exr==0.0.0
+simple-ocio==0.2.0
+torch==2.7.1+cu126
+torchmetrics==1.7.4
+torchvision==0.22.1+cu126
+tqdm==4.67.1
+transformers==4.55.4
+trimesh==4.7.1
+tyro==0.9.26
+typing-extensions==4.14.1
+wandb==0.21.0

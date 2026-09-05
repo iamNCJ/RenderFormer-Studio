@@ -1,0 +1,8 @@
+"The Modern Living Room" by Wig42.
+
+Original source: BlendSwap scene 75692 (historical page no longer resolves)
+Maintained conversion and source record: https://benedikt-bitterli.me/resources/
+License: CC BY 3.0, https://creativecommons.org/licenses/by/3.0/
+Full license text: ../../../../licenses/CC-BY-3.0.txt
+
+Changes: modified and exported for RenderFormer.

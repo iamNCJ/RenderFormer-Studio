@@ -1,0 +1,86 @@
+schema_version: 1
+recipe_id: "v1/stage_01_1k_256res"
+family: "v1"
+partition_key: "render_v1_stage_01_1k_256res"
+export_profile: "src/renderformer/data/profiles/v1_training_rf1.yaml"
+assets:
+  require_external_manifest: true
+template_corrections:
+  background_topology_debias: true
+  env_map_channel_shuffle: false
+render:
+  resolution: 256
+  num_views: 4
+  spp: 4096
+  texture_size: 32
+  texture_crop_resolution: null
+  texture_target_resolution: null
+  min_views: 0
+  include_background: false
+  use_heightmap_format: false
+templates:
+  - path: "src/renderformer/data/templates/v1/250418_256_res/corner-single-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250418_256_res/corner-multi-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250418_256_res/corner-no-object.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/v1/250418_256_res/corner-multi-object-patch.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/v1/250418_256_res/corner-multi-object-special.jsonc"
+    weight: 2
+  - path: "src/renderformer/data/templates/v1/250418_256_res/corner-single-object-patch.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/v1/250418_256_res/corner-single-object-special.jsonc"
+    weight: 2
+  - path: "src/renderformer/data/templates/v1/250418_256_res/no-ceil-box-multi.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250418_256_res/no-ceil-box-single.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250418_256_res/no-ceil-box-multi-patch.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/v1/250418_256_res/no-ceil-box-single-patch.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/v1/250418_256_res/no-ceil-box-no.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/v1/250418_256_res/plane-multi-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250418_256_res/plane-single-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250418_256_res/plane-no-object.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/v1/250418_256_res/wall-multi-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250418_256_res/wall-single-object.jsonc"
+    weight: 3
+  - path: "src/renderformer/data/templates/v1/250418_256_res/wall-no-object.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/v1/250418_256_res/wall-multi-object-patch.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/v1/250418_256_res/wall-single-object-patch.jsonc"
+    weight: 1
+  - path: "src/renderformer/data/templates/v1/250418_256_res/thin-objects/plane-single-object.jsonc"
+    weight: 8
+postprocess:
+  enabled: false
+historical:
+  sample_budget: null
+  seed: null
+  list_order: null
+known_gaps:
+  - sample_budget
+  - seed
+  - list_order
+artifacts:
+  historical_250112_paths_patched:
+    path: "250112_mv_data_pure/paths_patched.txt"
+    sources:
+      - recipe: "v1/250112_mv_data_pure"
+        historical_rows: null
+    total_rows: null
+  historical_250418_paths:
+    path: "250418_256_res/paths.txt"
+    sources:
+      - recipe: "v1/250418_256_res"
+        historical_rows: null
+    total_rows: null
