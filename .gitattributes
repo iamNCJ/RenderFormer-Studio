@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+examples/rf2/**/*.exr binary
+examples/rf2/**/*.jpg binary
+examples/rf2/**/*.mtl binary
+examples/rf2/**/*.obj binary
+examples/rf2/**/*.png binary
+examples/rf2/**/*.vdb binary

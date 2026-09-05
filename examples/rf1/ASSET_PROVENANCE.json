@@ -1,0 +1,510 @@
+{
+  "schema_version": 1,
+  "scope": "examples/rf1/**/*.obj",
+  "official_renderformer_commit": "c51f87083d0eebb806803fe32a357b8d9aefb085",
+  "official_project_page_commit": "0b57469d8f85580a8ca92624b6b1075c5dba3692",
+  "project_credit_page": "https://microsoft.github.io/renderformer/",
+  "notes": [
+    "Each legacy OBJ is byte-for-byte identical to the corresponding blob in the pinned official RenderFormer repository.",
+    "Redistribution approval records the RenderFormer maintainers' release decision; downstream use remains subject to each asset's license and restrictions.",
+    "CC BY 4.0 modifications are identified in the attribution record. The repository MIT license does not replace third-party asset terms.",
+    "NOASSERTION means the public source does not state a standard license; it is not a claim that the asset is unlicensed or public domain."
+  ],
+  "attributions": {
+    "renderformer-original": {
+      "title": "RenderFormer-authored example primitives and logo",
+      "creator": "RenderFormer authors",
+      "source_url": "https://github.com/microsoft/renderformer/tree/c51f87083d0eebb806803fe32a357b8d9aefb085/examples",
+      "license": "MIT",
+      "license_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/LICENSE",
+      "license_file": "../../licenses/microsoft-renderformer-MIT.txt",
+      "attribution": "RenderFormer authors.",
+      "changes": "No changes relative to the pinned official RenderFormer repository blob.",
+      "copyright": "Microsoft Corporation",
+      "license_verified_at": "2026-08-31"
+    },
+    "cornell-box": {
+      "title": "Cornell Box geometry",
+      "creator": "Cornell University Program of Computer Graphics",
+      "source_url": "https://bowers.cornell.edu/computer-graphics/data",
+      "license": "NOASSERTION",
+      "license_url": "https://bowers.cornell.edu/computer-graphics/data",
+      "license_file": null,
+      "attribution": "Cornell University Program of Computer Graphics, Cornell Box public-use data.",
+      "changes": "Converted to OBJ and prepared for the RenderFormer example; the bundled OBJ is unchanged from the pinned official RenderFormer release.",
+      "license_status": "no-public-standard-license",
+      "license_verified_at": "2026-08-31",
+      "redistribution_basis": "Maintainer-confirmed permission; exact blobs were previously distributed in microsoft/renderformer@c51f87083d0eebb806803fe32a357b8d9aefb085.",
+      "usage_restrictions": "The source labels the dataset for public use but does not state a standard open-content license."
+    },
+    "stanford-scan": {
+      "title": "Stanford Bunny and Lucy",
+      "creator": "Stanford University Computer Graphics Laboratory",
+      "source_url": "https://graphics.stanford.edu/data/3Dscanrep/",
+      "license": "LicenseRef-Stanford-3D-Scanning-Repository",
+      "license_url": "https://graphics.stanford.edu/data/3Dscanrep/",
+      "license_file": "../../licenses/Stanford-3D-Scanning-Repository-NOTICE.txt",
+      "attribution": "Stanford University Computer Graphics Laboratory.",
+      "changes": "Converted, simplified, and/or remeshed for RenderFormer; the bundled OBJ is unchanged from the pinned official RenderFormer release.",
+      "usage_restrictions": "Research use and free mirroring/redistribution are permitted with acknowledgement. Commercial use requires Stanford's permission.",
+      "license_verified_at": "2026-08-31",
+      "redistribution_basis": "Stanford's published terms permit acknowledged research use and free mirroring or redistribution."
+    },
+    "utah-teapot": {
+      "title": "Utah Teapot",
+      "creator": "University of Utah Model Repository; original model by Martin Newell",
+      "source_url": "https://users.cs.utah.edu/~dejohnso/models/teapot.html",
+      "license": "NOASSERTION",
+      "license_url": "https://users.cs.utah.edu/~dejohnso/models/teapot.html",
+      "license_file": null,
+      "attribution": "University of Utah Model Repository; original Utah Teapot by Martin Newell.",
+      "changes": "Converted and simplified for RenderFormer; the bundled OBJ is unchanged from the pinned official RenderFormer release.",
+      "usage_restrictions": "The source provides public downloads but does not state a standard open-content license.",
+      "license_status": "no-public-standard-license",
+      "license_verified_at": "2026-08-31",
+      "redistribution_basis": "Maintainer-confirmed permission; the exact blob was previously distributed in microsoft/renderformer@c51f87083d0eebb806803fe32a357b8d9aefb085."
+    },
+    "spot": {
+      "title": "Spot",
+      "creator": "Keenan Crane",
+      "source_url": "https://www.cs.cmu.edu/~kmcrane/Projects/ModelRepository/spot.zip",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_file": "../../licenses/CC0-1.0.txt",
+      "attribution": "Spot by Keenan Crane.",
+      "changes": "Converted and simplified for the composed RenderFormer scene.",
+      "license_evidence_url": "https://www.cs.cmu.edu/~kmcrane/Projects/ModelRepository/",
+      "license_verified_at": "2026-08-31"
+    },
+    "klein-bottle": {
+      "title": "Klein Bottle",
+      "creator": "Fausto Javier Da Rosa",
+      "source_url": "https://sketchfab.com/3d-models/klein-bottle-ce95eaceb29544aaa47db7a586811b09",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_file": "../../licenses/CC-BY-4.0.txt",
+      "attribution": "Klein Bottle by Fausto Javier Da Rosa, licensed CC BY 4.0.",
+      "changes": "Converted, extracted, and simplified for the composed RenderFormer scene.",
+      "license_api_url": "https://api.sketchfab.com/v3/models/ce95eaceb29544aaa47db7a586811b09",
+      "license_verified_at": "2026-08-31"
+    },
+    "constant-width": {
+      "title": "Small Volume Surface of Constant Width",
+      "creator": "Andrii Arman, Andriy Bondarenko, Fedor Nazarov, Andriy Prymak, and Danylo Radchenko; mesh release by Keenan Crane",
+      "source_url": "https://www.cs.cmu.edu/~kmcrane/Projects/ModelRepository/constant-width.zip",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_file": "../../licenses/CC0-1.0.txt",
+      "attribution": "Small Volume Surface of Constant Width; mesh released by Keenan Crane under CC0 1.0.",
+      "changes": "Triangulated, simplified/decimated, and prepared for RenderFormer.",
+      "license_evidence_url": "https://www.cs.cmu.edu/~kmcrane/Projects/ModelRepository/",
+      "license_verified_at": "2026-08-31"
+    },
+    "lowpoly-crystals": {
+      "title": "Lowpoly Crystals",
+      "creator": "Mongze",
+      "source_url": "https://sketchfab.com/3d-models/lowpoly-crystals-d94bccb1305d409482eba04d736fb7dd",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_file": "../../licenses/CC-BY-4.0.txt",
+      "attribution": "Lowpoly Crystals by Mongze, licensed CC BY 4.0.",
+      "changes": "The source scene was split by color, converted, and simplified for RenderFormer.",
+      "license_api_url": "https://api.sketchfab.com/v3/models/d94bccb1305d409482eba04d736fb7dd",
+      "license_verified_at": "2026-08-31"
+    },
+    "lowpoly-fox": {
+      "title": "Lowpoly Fox scene components",
+      "creator": "Vlad Zaichyk",
+      "source_url": "https://sketchfab.com/3d-models/lowpoly-fox-01674a892f414c0681afdeb563cc8e13",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_file": "../../licenses/CC-BY-4.0.txt",
+      "attribution": "Lowpoly Fox by Vlad Zaichyk, licensed CC BY 4.0.",
+      "changes": "Scene components were extracted, converted, and simplified for RenderFormer.",
+      "license_api_url": "https://api.sketchfab.com/v3/models/01674a892f414c0681afdeb563cc8e13",
+      "license_verified_at": "2026-08-31",
+      "risk_note": "The upload description cites a reference image by Frost-Skyder; rights in that underlying reference image were not independently verified. The bundled files contain geometry only."
+    },
+    "bronco": {
+      "title": "Bronco",
+      "creator": "Microsoft",
+      "source_url": "https://sketchfab.com/3d-models/bronco-37e3760bfde44beeb39e6fd69b690637",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_file": "../../licenses/CC-BY-4.0.txt",
+      "attribution": "Bronco by Microsoft, licensed CC BY 4.0.",
+      "changes": "Converted and simplified for RenderFormer.",
+      "license_api_url": "https://api.sketchfab.com/v3/models/37e3760bfde44beeb39e6fd69b690637",
+      "license_verified_at": "2026-08-31"
+    },
+    "heart-puzzle": {
+      "title": "Heart Puzzle",
+      "creator": "Microsoft",
+      "source_url": "https://sketchfab.com/3d-models/heart-puzzle-e762b2d7de6749e79f54e0e6a0ff96be",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_file": "../../licenses/CC-BY-4.0.txt",
+      "attribution": "Heart Puzzle by Microsoft, licensed CC BY 4.0.",
+      "changes": "Components were extracted, converted, and simplified for RenderFormer.",
+      "license_api_url": "https://api.sketchfab.com/v3/models/e762b2d7de6749e79f54e0e6a0ff96be",
+      "license_verified_at": "2026-08-31"
+    },
+    "mitsuba-material-preview": {
+      "title": "Mitsuba material preview / shader ball",
+      "creator": "Scene geometry by Jonas Pilo; distributed by Mitsuba, maintained by Wenzel Jakob",
+      "source_url": "https://www.mitsuba-renderer.org/scenes/matpreview.zip",
+      "license": "NOASSERTION",
+      "license_url": "https://www.mitsuba-renderer.org/download.html",
+      "license_file": null,
+      "attribution": "Material-preview scene geometry by Jonas Pilo; distributed by the Mitsuba project, maintained by Wenzel Jakob.",
+      "changes": "Converted from the Mitsuba material-preview scene and split into RenderFormer OBJ components.",
+      "usage_restrictions": "The download page excludes example scenes from Mitsuba's GPL and the archive contains no standalone license.",
+      "license_status": "no-public-standard-license",
+      "license_evidence_url": "https://www.mitsuba-renderer.org/download.html",
+      "license_verified_at": "2026-08-31",
+      "redistribution_basis": "Maintainer-confirmed permission; exact converted blobs were previously distributed in microsoft/renderformer@c51f87083d0eebb806803fe32a357b8d9aefb085.",
+      "upstream_artifact": {
+        "path": "matpreview/matpreview.serialized",
+        "sha256": "3db708c2fc2cf009e779c72e2ff0e016ab7fe2b9ebcf9a51e218dac1fc8571a8"
+      }
+    },
+    "jewelry": {
+      "title": "Jewelry",
+      "creator": "elbenZ",
+      "source_url": "https://sketchfab.com/3d-models/jewelry-4373121e41f94727bb802b78ce6b566f",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_file": "../../licenses/CC-BY-4.0.txt",
+      "attribution": "Jewelry by elbenZ, licensed CC BY 4.0.",
+      "changes": "The tree component was extracted, converted, and simplified for the RenderFormer tree example.",
+      "license_api_url": "https://api.sketchfab.com/v3/models/4373121e41f94727bb802b78ce6b566f",
+      "license_verified_at": "2026-08-31"
+    },
+    "veach-mis": {
+      "title": "Veach MIS test scene",
+      "creator": "Mitsuba scene by Benedikt Bitterli, based on the Veach/Guibas multiple-importance-sampling test setup",
+      "source_url": "https://d38rqfq1h7iukm.cloudfront.net/scenes/veach-mis.zip",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_file": "../../licenses/CC0-1.0.txt",
+      "attribution": "Veach MIS test setup based on Eric Veach and Leonidas J. Guibas; Mitsuba scene by Benedikt Bitterli, released under CC0 1.0.",
+      "changes": "Scene meshes were converted and split into RenderFormer OBJ components.",
+      "license_evidence_url": "https://benedikt-bitterli.me/resources/",
+      "license_verified_at": "2026-08-31"
+    }
+  },
+  "assets": [
+    {
+      "path": "objects/cbox/short-box.obj",
+      "sha256": "36141f8217eee51ce48cda36466fd5d0ae3f14040a69afc8430bec9b6d715dd9",
+      "official_renderformer_blob_sha1": "671e2caf0a5a1267d5abab0d9c8fb1198decbaaf",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/cbox/short-box.obj",
+      "attribution_id": "cornell-box",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/cbox/tall-box.obj",
+      "sha256": "a09c19f5e1982c0ba62a8da46c57c303c2656e02b02c96472d27d9d7a61f7e42",
+      "official_renderformer_blob_sha1": "0fb2eed63f96119b9640a6131a7d0ab43865bb19",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/cbox/tall-box.obj",
+      "attribution_id": "cornell-box",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/classical/bunny.obj",
+      "sha256": "b18f2c1a4e4f54f3a3da56e2bc8386f4e3106f9a690d5ccda4233330f123f249",
+      "official_renderformer_blob_sha1": "d7621de8c0b1d327ba8af8994601611c50ab7b39",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/classical/bunny.obj",
+      "attribution_id": "stanford-scan",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/classical/teapot.obj",
+      "sha256": "7352abe93e50d1ba3db93bef4fa4ba872b77fb0e37f9c0a4dc558981c37d1e04",
+      "official_renderformer_blob_sha1": "0241396513582b8132811a92138af7289a788e76",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/classical/teapot.obj",
+      "attribution_id": "utah-teapot",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/compose/obj0.obj",
+      "sha256": "34eb4918bfbb6e16a1d45315810e79787197282211d019cc7cdfb9d9a0734cbe",
+      "official_renderformer_blob_sha1": "9846261b342645ac5ae03a3b07f5607e34464517",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/compose/obj0.obj",
+      "attribution_id": "renderformer-original",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/compose/obj1.obj",
+      "sha256": "bdd1585c90b868ff87543be0ee196bf1d7b33e73da31367de998c69de25845aa",
+      "official_renderformer_blob_sha1": "85d6169dc39ec09afe4a7c5e46941a3f297469f4",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/compose/obj1.obj",
+      "attribution_id": "renderformer-original",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/compose/obj2.obj",
+      "sha256": "816fcd4eb8fbe3d936b532c7134b022ddd5094c3e8bb065644287fa61e6c644e",
+      "official_renderformer_blob_sha1": "fbcddf7b4538d5376936209fe5260dedcdfa10e3",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/compose/obj2.obj",
+      "attribution_id": "spot",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/compose/obj3.obj",
+      "sha256": "29368a27418d2cac90160b498d33d2c3f4f1bc6dbdb278a9c4e98c0e39b7721d",
+      "official_renderformer_blob_sha1": "c46253729ece24a7cab5d4773845ce29c27887ff",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/compose/obj3.obj",
+      "attribution_id": "klein-bottle",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/compose/plane.obj",
+      "sha256": "3151f8dc162f61af3b2b69f135752e94d9f8db341ac743ab78b53a6aeca1e0ea",
+      "official_renderformer_blob_sha1": "25e46ae5e35f5d4184566214229875e2ff54942e",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/compose/plane.obj",
+      "attribution_id": "renderformer-original",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/constant-width/constant-width-triangulated.obj",
+      "sha256": "fddadfb54faef09a8f06a25f1bd802116cf84935486aa94c738034d6dbd20df9",
+      "official_renderformer_blob_sha1": "6973db070f23ed13fa86eae1fd24f8c63ca4f6f6",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/constant-width/constant-width-triangulated.obj",
+      "attribution_id": "constant-width",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/crystals/blue.obj",
+      "sha256": "34ed3b5437847b55509486d9308d37f79de5776e3f34fbd882699127a8b4a783",
+      "official_renderformer_blob_sha1": "a820d845fff2ef486372f6eaaadca7b90ead7dc8",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/crystals/blue.obj",
+      "attribution_id": "lowpoly-crystals",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/crystals/green.obj",
+      "sha256": "49783e3fdac4d9272437391e9b5a1c4ba0650d8bb43e37e51c4ee7abf43764bb",
+      "official_renderformer_blob_sha1": "f6b86f94f773732335d5e31cbb07ea070bda9f76",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/crystals/green.obj",
+      "attribution_id": "lowpoly-crystals",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/crystals/pink.obj",
+      "sha256": "497478f9e92a5ea1e6b6abcab6bc4ff5a058634412aea22b8d55aa8710e917f1",
+      "official_renderformer_blob_sha1": "2f605928183d6cb4dd72e1a5731343829dde6722",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/crystals/pink.obj",
+      "attribution_id": "lowpoly-crystals",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/crystals/purple.obj",
+      "sha256": "714e61b4a6d8e53897838dfd5858b2e882e09da02206690f3e6869a2a11d090f",
+      "official_renderformer_blob_sha1": "d77cd0b86079374cbc991553fb226acfe2327059",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/crystals/purple.obj",
+      "attribution_id": "lowpoly-crystals",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/crystals/red.obj",
+      "sha256": "c2318fa9dc57bc001651f039a227f0dfd41d2f5ed62e800559ccb9f237f49a09",
+      "official_renderformer_blob_sha1": "92d306cc1147ad112a7f7a0245de37e5fb62ac92",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/crystals/red.obj",
+      "attribution_id": "lowpoly-crystals",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/fox-in-the-wild/fox.obj",
+      "sha256": "81e53860e95e9070688e21d3343e249aee91f19150d2ac1dca8fe6be9c876995",
+      "official_renderformer_blob_sha1": "57ea8215107764c12053634d8321a28e89e4eec1",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/fox-in-the-wild/fox.obj",
+      "attribution_id": "lowpoly-fox",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/fox-in-the-wild/rock.obj",
+      "sha256": "5d25d5fc2502ea99d821728fc4f45e361592c65fd2c705c9a11fcc4e9e6c6665",
+      "official_renderformer_blob_sha1": "80c770237cf23d769ceba0ee016ea115586aaf62",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/fox-in-the-wild/rock.obj",
+      "attribution_id": "lowpoly-fox",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/fox-in-the-wild/tree-leaves.obj",
+      "sha256": "01dc33e6d2417c128eb77ad07392db554f301fef7bf988dc267321f08f56310d",
+      "official_renderformer_blob_sha1": "be0c0878660a9a7c3c321d4608da681eae37a71d",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/fox-in-the-wild/tree-leaves.obj",
+      "attribution_id": "lowpoly-fox",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/fox-in-the-wild/tree-trunk.obj",
+      "sha256": "7152804b6032d32bada0434476f32b22b24bab6c469e897f4f1932a2c48dab8f",
+      "official_renderformer_blob_sha1": "0c565615ceb28205dc83e7cc864ba2fa8f5c09f1",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/fox-in-the-wild/tree-trunk.obj",
+      "attribution_id": "lowpoly-fox",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/horse-and-heart/heart-gray.obj",
+      "sha256": "b7d0ddd18cbc5f3b46003395b3db547d51950ea33e9caebcdf5b9687fb507367",
+      "official_renderformer_blob_sha1": "6139c61007a9bc1b999c832d6fe1bd11cfb90906",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/horse-and-heart/heart-gray.obj",
+      "attribution_id": "heart-puzzle",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/horse-and-heart/heart-red.obj",
+      "sha256": "5dc68cb79ed52c6cf8db4fb6355394085918d3dea4791313769808c1b24c77ef",
+      "official_renderformer_blob_sha1": "3b2efcb53e6acdd19b2646ab3c82df11502c6ff8",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/horse-and-heart/heart-red.obj",
+      "attribution_id": "heart-puzzle",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/horse-and-heart/horse.obj",
+      "sha256": "082fc3ff872b078e79369660ab62fa0c41110b025ff1db5d95c5704fa235476b",
+      "official_renderformer_blob_sha1": "9e0f277ece73df9ea312742a6197fdb8f8cdc20e",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/horse-and-heart/horse.obj",
+      "attribution_id": "bronco",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/lucy/11k.obj",
+      "sha256": "596f082122fbeb871ede018e80dfebc8e55ea43b457acc51defa807aaddd058a",
+      "official_renderformer_blob_sha1": "579cab800b4c1e79f86cca8b435a70c1027b40a6",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/lucy/11k.obj",
+      "attribution_id": "stanford-scan",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/renderformer-logo/rf.obj",
+      "sha256": "e5bb20a99b38d45173b49eee7320a2614770141a7cbf77abdbddef64ca3e7fe8",
+      "official_renderformer_blob_sha1": "8767b3a1347086adbac047875822e5938ba48295",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/renderformer-logo/rf.obj",
+      "attribution_id": "renderformer-original",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/shader-ball/ball.obj",
+      "sha256": "50a771d50574bc6e94c68bacb7c9accabdd5251f56783c91503970f07bc7f80d",
+      "official_renderformer_blob_sha1": "032589132b16e71e5ee3c392932224b12e78d339",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/shader-ball/ball.obj",
+      "attribution_id": "mitsuba-material-preview",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/shader-ball/shell.obj",
+      "sha256": "ffb44de98a84294f008a0ac58ba0b3dab8fa5ce19288e59b2e7c469ced1e5233",
+      "official_renderformer_blob_sha1": "6239739c0b05e93b047f562476a3d272cd0f7248",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/shader-ball/shell.obj",
+      "attribution_id": "mitsuba-material-preview",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/tree/tree.obj",
+      "sha256": "263ba0b04f1192745062ce18e10346501f14122a89963fa1eb1187dedc0e8ba2",
+      "official_renderformer_blob_sha1": "e56b263de6c10ee7137119dbbba647ca05950a40",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/tree/tree.obj",
+      "attribution_id": "jewelry",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/veach-mis/block1.obj",
+      "sha256": "a9f55d1b16e0bfff615a64a499f130e9ce76784d3acdc51f636fa968c6072cba",
+      "official_renderformer_blob_sha1": "c6123c3786bafa6b45bdae173fb66b1bfe301000",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/veach-mis/block1.obj",
+      "attribution_id": "veach-mis",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/veach-mis/block2.obj",
+      "sha256": "dca4f1954bd6a8ea545c1ea4344bf0106bff60026b9477f1ec1dd98c0b8ae728",
+      "official_renderformer_blob_sha1": "1da4057130c6624121b2b4b73a7fc88082ff7c72",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/veach-mis/block2.obj",
+      "attribution_id": "veach-mis",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/veach-mis/block3.obj",
+      "sha256": "214522429470dcbb38b98618d47ab39b499c23996093f37fcdf8208e60545392",
+      "official_renderformer_blob_sha1": "bdc6e3d3c326662d55dcc9a69b13d89e706cca52",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/veach-mis/block3.obj",
+      "attribution_id": "veach-mis",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/veach-mis/block4.obj",
+      "sha256": "5fddd745deef399a3cb332bcb5df9937b64e0f65269db3a97a00304b408b34c1",
+      "official_renderformer_blob_sha1": "e1d646fe7ad35fbc9262212e7dae94d1f5f6a7f5",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/veach-mis/block4.obj",
+      "attribution_id": "veach-mis",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/veach-mis/sphere1.obj",
+      "sha256": "4268b1b16739100b88351548c595f6efeda02bb2d90aedcc25486953e54f53d7",
+      "official_renderformer_blob_sha1": "6576ab16e1f689e8e5fa538b4fa809e4f0cb7fa7",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/veach-mis/sphere1.obj",
+      "attribution_id": "veach-mis",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/veach-mis/sphere2.obj",
+      "sha256": "0915f74d92fd6f2167ebd65cad29c777a0b4794af74d2fe050ecae30b2b87bbf",
+      "official_renderformer_blob_sha1": "69e964c0679703e0c262b93ac4d63eb2c65f773c",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/veach-mis/sphere2.obj",
+      "attribution_id": "veach-mis",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "objects/veach-mis/sphere3.obj",
+      "sha256": "0d5dced911a768e901de624d9cfd3cfac4111be57b8dc575e2091caa1a8ceec7",
+      "official_renderformer_blob_sha1": "ba5bb75ca3a73ae73de693804a4617ddcf470176",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/objects/veach-mis/sphere3.obj",
+      "attribution_id": "veach-mis",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "templates/backgrounds/plane.obj",
+      "sha256": "6037c3954da32d70a18faa65ec55b4d6fd5363e2bf0ed781c7b6973f88cf2f96",
+      "official_renderformer_blob_sha1": "877dc35fa5cae65bacdec461d09257b332150c64",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/templates/backgrounds/plane.obj",
+      "attribution_id": "renderformer-original",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "templates/backgrounds/wall0.obj",
+      "sha256": "3f42810db0248c7630ceb4b8ef7df8cde452ca43d4511e6fe7f4afa55c165ab5",
+      "official_renderformer_blob_sha1": "49208d6d27b2bb3b2aa4950a05d898ac74692753",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/templates/backgrounds/wall0.obj",
+      "attribution_id": "renderformer-original",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "templates/backgrounds/wall1.obj",
+      "sha256": "ec1276526e72a7d6c31e6e60c5b2bffa16200bda2dfb58dd2f8cb3db75c2a098",
+      "official_renderformer_blob_sha1": "a5a2d933f452b86609187edbd0faafc317a4144d",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/templates/backgrounds/wall1.obj",
+      "attribution_id": "renderformer-original",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "templates/backgrounds/wall2.obj",
+      "sha256": "0dd4567f9478cabf856b4cbf80539cf17bc350d10b2fa53cb87ab9b81d3d4ddb",
+      "official_renderformer_blob_sha1": "2d1baf4ac56ced41833e29bb47d3d4f640cd3db3",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/templates/backgrounds/wall2.obj",
+      "attribution_id": "renderformer-original",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "templates/lighting/tri.obj",
+      "sha256": "ae5393e8764d5ba91beca31a2c303f98278d6392a0545d3c5386183b9fd1ce89",
+      "official_renderformer_blob_sha1": "866b6c4fe413783816a1460d950dd663c68b90c1",
+      "official_renderformer_url": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/templates/lighting/tri.obj",
+      "attribution_id": "renderformer-original",
+      "redistribution_status": "approved"
+    }
+  ]
+}

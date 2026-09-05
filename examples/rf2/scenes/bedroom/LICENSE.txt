@@ -1,0 +1,8 @@
+"Modern Bedroom" by dylanheyes.
+
+Source: https://sketchfab.com/3d-models/modern-bedroom-ab1e4522dcae4af1bbd39299ab382f37
+License: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+
+Changes: geometry and materials were modified, selectively replaced, and
+exported for RenderFormer. The two external wall base-color files are not
+covered by this notice and are intentionally not bundled.

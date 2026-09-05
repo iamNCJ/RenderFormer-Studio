@@ -1,0 +1,920 @@
+{
+  "scene_name": "living-room",
+  "version": "1.1.0",
+  "objects": {
+    "light_0": {
+      "mesh_path": "split/light_0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": true,
+      "material": {
+        "material_type": "homo_diffuse_specular",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": {
+          "diffuse": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specular": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "roughness": 1.0
+        },
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          4500.0,
+          4500.0,
+          4500.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh002": {
+      "mesh_path": "split/Mesh002.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh004": {
+      "mesh_path": "split/Mesh004.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.5775768756866455,
+            0.30946919322013855,
+            0.2788943946361542
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh005": {
+      "mesh_path": "split/Mesh005.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh006": {
+      "mesh_path": "split/Mesh006.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.6375928521156311,
+            0.5457252264022827,
+            0.49102091789245605
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh007": {
+      "mesh_path": "split/Mesh007.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.5775768756866455,
+            0.30946919322013855,
+            0.2788943946361542
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh009": {
+      "mesh_path": "split/Mesh009.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.5775768756866455,
+            0.30946919322013855,
+            0.2788943946361542
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh011": {
+      "mesh_path": "split/Mesh011.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.6375928521156311,
+            0.5457252264022827,
+            0.49102091789245605
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh013_001": {
+      "mesh_path": "split/Mesh013_001.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.3515307903289795,
+            0.0,
+            0.0
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh019_001": {
+      "mesh_path": "split/Mesh019_001.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.3515307903289795,
+            0.0,
+            0.0
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh020_001": {
+      "mesh_path": "split/Mesh020_001.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.05881144851446152,
+            0.05881144851446152,
+            0.05881144851446152
+          ],
+          "metallic": 0.8267716765403748,
+          "roughness": 0.10236221551895142
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh023": {
+      "mesh_path": "split/Mesh023.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.6375928521156311,
+            0.5457252264022827,
+            0.49102091789245605
+          ],
+          "metallic": 0.22047245502471924,
+          "roughness": 0.09448820352554321
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh025": {
+      "mesh_path": "split/Mesh025.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.3515307903289795,
+            0.0,
+            0.0
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh028": {
+      "mesh_path": "split/Mesh028.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.6375928521156311,
+            0.5457252264022827,
+            0.49102091789245605
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh030": {
+      "mesh_path": "split/Mesh030.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.6375928521156311,
+            0.5457252264022827,
+            0.49102091789245605
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh031_copy": {
+      "mesh_path": "split/Mesh031_copy.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.6375928521156311,
+            0.5457252264022827,
+            0.49102091789245605
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh032": {
+      "mesh_path": "split/Mesh032.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "svbrdf_diffuse_specular",
+        "texture_map_path": "split/Mesh032",
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh033_001": {
+      "mesh_path": "split/Mesh033_001.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.3515307903289795,
+            0.0,
+            0.0
+          ],
+          "metallic": 0.0,
+          "roughness": 1.0
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Mesh035": {
+      "mesh_path": "split/Mesh035.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.3515307903289795,
+            0.0,
+            0.0
+          ],
+          "metallic": 0.14173229038715363,
+          "roughness": 0.11811022460460663
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "plane": {
+      "mesh_path": "split/plane.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "svbrdf_metallic_roughness",
+        "texture_map_path": "split/plane",
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "wall0": {
+      "mesh_path": "split/wall0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.6375928521156311,
+            0.5457252264022827,
+            0.49102091789245605
+          ],
+          "metallic": 0.0,
+          "roughness": 0.5
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "wall1": {
+      "mesh_path": "split/wall1.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            0.6375928521156311,
+            0.5457252264022827,
+            0.49102091789245605
+          ],
+          "metallic": 0.0,
+          "roughness": 0.5
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    }
+  },
+  "cameras": [
+    {
+      "position": [
+        -0.7452501654624939,
+        -1.4441760778427124,
+        -0.255968302488327
+      ],
+      "look_at": [
+        -0.390280157327652,
+        -0.5097154974937439,
+        -0.2280406691133976
+      ],
+      "up": [
+        -0.009916756302118301,
+        -0.0261076670140028,
+        0.9996100664138794
+      ],
+      "fov": 37.49999933598528
+    }
+  ],
+  "lighting": [],
+  "env_map": null,
+  "volumes": null,
+  "wall_holes": null
+}

@@ -1,0 +1,28 @@
+format: v2
+schema_version: 2
+unsupported_policy: error
+allowed_material_types:
+  - diffuse_specular
+  - metallic_roughness
+  - metallic_roughness_transmission
+  - measured_brdf
+# per_triangle is held back for now: the v2 exporter still encodes the
+# homogeneous BRDF as a single (9,) latent per object, so per-face diffuse
+# from rand_tri_diffuse_seed would not survive into the H5. Re-enable once
+# the per-face latent path is implemented and verified.
+allowed_spatial_variation:
+  - uniform
+  - uv_texture
+allow_env_map: true
+allow_volume: true
+allow_heightmap: true
+texture_export:
+  mode: raw_only
+  encode_timing: postprocess
+  spatial_encoding: per_triangle_uv_32
+env_map:
+  enabled: true
+volume:
+  enabled: true
+render_passes:
+  img: true

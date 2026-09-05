@@ -1,0 +1,181 @@
+{
+  "scene_name": "spaceship-in-smoke",
+  "version": "1.1.0",
+  "objects": {
+    "light_0": {
+      "mesh_path": "split/light_0.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": true,
+      "material": {
+        "material_type": "homo_diffuse_specular",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": {
+          "diffuse": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specular": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "roughness": 1.0
+        },
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          4500.0,
+          4500.0,
+          4500.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "Object_3": {
+      "mesh_path": "split/Object_3.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_metallic_roughness",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": null,
+        "metallic_roughness_params": {
+          "base_color": [
+            1.0,
+            1.0,
+            0.16
+          ],
+          "metallic": 0.7907949686050415,
+          "roughness": 0.06694560497999191
+        },
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": true,
+        "rand_tri_diffuse_seed": null
+      }
+    },
+    "plane": {
+      "mesh_path": "split/plane.obj",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": false
+      },
+      "is_background": false,
+      "is_lighting": false,
+      "material": {
+        "material_type": "homo_diffuse_specular",
+        "texture_map_path": null,
+        "texture_map_aug_random_seed": null,
+        "use_heightmap": false,
+        "diffuse_specular_params": {
+          "diffuse": [
+            0.4000000059604645,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "specular": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "roughness": 1.0
+        },
+        "metallic_roughness_params": null,
+        "metallic_roughness_transmission_params": null,
+        "emissive": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "smooth_shading": false,
+        "rand_tri_diffuse_seed": null
+      }
+    }
+  },
+  "cameras": [
+    {
+      "position": [
+        1.1728882789611816,
+        0.05355082452297211,
+        1.1987082958221436
+      ],
+      "look_at": [
+        0.5194713473320007,
+        0.04899425804615021,
+        0.4417237639427185
+      ],
+      "up": [
+        -0.7569661736488342,
+        -0.005274036433547735,
+        0.6534328460693359
+      ],
+      "fov": 37.49999933598528
+    }
+  ],
+  "lighting": [],
+  "env_map": null,
+  "volumes": [
+    {
+      "vdb_path": "external/fluid_data_0175_preprocessed.vdb",
+      "transform": {
+        "translation_x": 0.0,
+        "translation_y": 0.0,
+        "translation_z": 0.0,
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "normalize": true
+      },
+      "scattering_scale": [0.1, 5.0, 5.0],
+      "absorption_scale": [5.0, 2.0, 2.0],
+      "seed": 42,
+      "transpose_written": true
+    }
+  ],
+  "wall_holes": null
+}

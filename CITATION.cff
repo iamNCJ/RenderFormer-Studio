@@ -1,0 +1,72 @@
+cff-version: 1.2.0
+message: >-
+  Please cite both RenderFormer papers listed in the repository README.
+title: RenderFormer Studio
+type: software
+authors:
+  - family-names: Zeng
+    given-names: Chong
+  - family-names: Dong
+    given-names: Yue
+  - family-names: Peers
+    given-names: Pieter
+  - family-names: Wu
+    given-names: Hongzhi
+  - family-names: Tong
+    given-names: Xin
+  - family-names: Zhang
+    given-names: Lvmin
+  - family-names: Agrawala
+    given-names: Maneesh
+url: https://renderformer.github.io/v2/
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: Zeng
+      given-names: Chong
+    - family-names: Dong
+      given-names: Yue
+    - family-names: Peers
+      given-names: Pieter
+    - family-names: Zhang
+      given-names: Lvmin
+    - family-names: Agrawala
+      given-names: Maneesh
+  title: "RenderFormer-V2: Neural Rendering with Heterogeneous Scene Primitives"
+  collection-title: European Conference on Computer Vision (ECCV)
+  year: 2026
+  url: https://renderformer.github.io/v2/
+references:
+  - type: conference-paper
+    authors:
+      - family-names: Zeng
+        given-names: Chong
+      - family-names: Dong
+        given-names: Yue
+      - family-names: Peers
+        given-names: Pieter
+      - family-names: Wu
+        given-names: Hongzhi
+      - family-names: Tong
+        given-names: Xin
+    title: "RenderFormer: Transformer-based Neural Rendering of Triangle Meshes with Global Illumination"
+    collection-title: ACM SIGGRAPH 2025 Conference Papers
+    year: 2025
+    doi: 10.1145/3721238.3730595
+    url: https://arxiv.org/abs/2505.21925
+  - type: conference-paper
+    authors:
+      - family-names: Zeng
+        given-names: Chong
+      - family-names: Dong
+        given-names: Yue
+      - family-names: Peers
+        given-names: Pieter
+      - family-names: Zhang
+        given-names: Lvmin
+      - family-names: Agrawala
+        given-names: Maneesh
+    title: "RenderFormer-V2: Neural Rendering with Heterogeneous Scene Primitives"
+    collection-title: European Conference on Computer Vision (ECCV)
+    year: 2026
+    url: https://renderformer.github.io/v2/

@@ -1,0 +1,8 @@
+"Dragon" by Delatronic.
+
+Original source: BlendSwap scene 80766 (historical page no longer resolves)
+Maintained conversion and source record: https://benedikt-bitterli.me/resources/
+License: CC BY 3.0, https://creativecommons.org/licenses/by/3.0/
+Full license text: ../../../../licenses/CC-BY-3.0.txt
+
+Changes: simplified and exported for RenderFormer.

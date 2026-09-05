@@ -1,0 +1,17 @@
+schema_version = "1.0.0"
+
+id = "renderformer_v1_tools"
+version = "1.1.0"
+name = "RenderFormer V1 Tools"
+tagline = "Export Blender scenes to the strict RF1 HDF5 format"
+maintainer = "RenderFormer maintainers"
+type = "add-on"
+blender_version_min = "4.5.10"
+blender_version_max = "4.5.11"
+
+website = "https://microsoft.github.io/renderformer/"
+tags = ["Import-Export"]
+license = ["SPDX:MIT"]
+
+[permissions]
+files = "Write RF1 HDF5 files and optional EXR renders"

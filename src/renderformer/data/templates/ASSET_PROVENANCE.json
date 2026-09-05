@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "scope": "src/renderformer/data/templates/**/*.obj",
+  "notes": [
+    "These meshes are project-maintained procedural primitives, camera/bounding shells, lighting layouts, and scene-template geometry.",
+    "Six file paths (five unique blobs) are byte-for-byte copies of the pinned official Microsoft RenderFormer example templates and retain Microsoft's MIT notice; the remaining 30 file paths were added by the current RenderFormer project and use the repository MIT notice.",
+    "This manifest covers only bundled template OBJ files; external training assets are not bundled and remain governed by their providers' terms."
+  ],
+  "assets": [
+    {
+      "path": "bbox/default.obj",
+      "sha256": "a3deba1cf1516f3210aecc031e91cec42008f34f7c6da79de8806286799d61b5",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "camera/box-camera.obj",
+      "sha256": "47a412756a77f73a26ae02b55c5e852ee3d80723a56097bebb842677db741d73",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "camera/corner-cam.obj",
+      "sha256": "3cc0f0717a09cdfb38c7d99660bac803220930d6663f9284661b330fd3d6abd3",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "camera/hemi.obj",
+      "sha256": "a746c81d31ed607c0a595ae37ee113418f9e2729f3e866942c1a9eb1d39fbd9f",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "camera/quadrant.obj",
+      "sha256": "6f60175f7a7325dad23cd686e35e3d17bead775cd833dde526cafa15617b831c",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "camera/quater.obj",
+      "sha256": "dff061ee273ebfbeedeeee0f803c2cddef4f89d88cc09b5f8b5bcee29cd871a2",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "lighting/20_90-old-test.obj",
+      "sha256": "1e12ffe344d235e5b84b74101aa019cf87b7fbc096100190d5d01951017e0ea8",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "lighting/20_90.obj",
+      "sha256": "1c3862fa9afc8de40394859cebbcc7aaa7ce7ba784be134cbec3a3d0275e5de2",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "lighting/box-lighting-hole.obj",
+      "sha256": "8be83ab00efec52c9323a4ecbf4247f062779c646be5dd07907910314b1f448c",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "lighting/box-lighting.obj",
+      "sha256": "e948054e8f5b1809ec81efcd65d133d400e5155f8ddb84428e3cdad9963b501a",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "lighting/corner-lighting.obj",
+      "sha256": "44111e99bc332f206679977f06ed580d5d3731aee060e41dfb46d2fffd6f9a9c",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "lighting/cube.obj",
+      "sha256": "9e20fa505e67300095f171ade4774c1e262b01745196167a14dcf29fd29db75c",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "lighting/tri.obj",
+      "sha256": "ae5393e8764d5ba91beca31a2c303f98278d6392a0545d3c5386183b9fd1ce89",
+      "creator": "RenderFormer authors; Microsoft Corporation",
+      "source": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/templates/lighting/tri.obj",
+      "license": "MIT",
+      "license_file": "LICENSE-Microsoft-RenderFormer.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "lighting/tri_4x.obj",
+      "sha256": "d99e01558752483a6af554a7f02e7de75bb0a8c61cb30b531425530f2f9b60ce",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "lighting/tri_8x.obj",
+      "sha256": "b575abb93637c27217c6f73f12ae3bfb5469bfbdc51dce3e7cbaaf58295d48ea",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/ceiling.obj",
+      "sha256": "d35869b596596250dca6c72df27e4703dc79c94d1c92e5ea58861acadf036f88",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/ceiling_uv.obj",
+      "sha256": "266a76276afb4a917d9e3fc952bd4ca58a3772616b605cabc7d51b62b28ecdae",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/ceiling_uv_full.obj",
+      "sha256": "068284592a9f85c4ef2b87bc9e3041ae97abeaec7704da050d56b8b4ded61bc4",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/plane.obj",
+      "sha256": "6037c3954da32d70a18faa65ec55b4d6fd5363e2bf0ed781c7b6973f88cf2f96",
+      "creator": "RenderFormer authors; Microsoft Corporation",
+      "source": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/templates/backgrounds/plane.obj",
+      "license": "MIT",
+      "license_file": "LICENSE-Microsoft-RenderFormer.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/plane512.obj",
+      "sha256": "61957615a8aebdf9ce32aab85796cd3b1c7a6d2ddf55cab7d74476c88c3f228e",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/plane_uv.obj",
+      "sha256": "9e2de47cba10d1e8e484e2a7b4283397c752450be24d3230065e5799e1bbd817",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/wall0.obj",
+      "sha256": "3f42810db0248c7630ceb4b8ef7df8cde452ca43d4511e6fe7f4afa55c165ab5",
+      "creator": "RenderFormer authors; Microsoft Corporation",
+      "source": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/templates/backgrounds/wall0.obj",
+      "license": "MIT",
+      "license_file": "LICENSE-Microsoft-RenderFormer.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/wall0_uv.obj",
+      "sha256": "746b9713c91b65303efdf72679cc2be1d0a27623bd35eedc6c467b7106ba9043",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/wall1.obj",
+      "sha256": "ec1276526e72a7d6c31e6e60c5b2bffa16200bda2dfb58dd2f8cb3db75c2a098",
+      "creator": "RenderFormer authors; Microsoft Corporation",
+      "source": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/templates/backgrounds/wall1.obj",
+      "license": "MIT",
+      "license_file": "LICENSE-Microsoft-RenderFormer.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/wall1_uv.obj",
+      "sha256": "925111ba7199c6d5328257276be9eb82b618fbe443b2d3f9f2ca17c1ac69833a",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/wall2-flip.obj",
+      "sha256": "0dd4567f9478cabf856b4cbf80539cf17bc350d10b2fa53cb87ab9b81d3d4ddb",
+      "creator": "RenderFormer authors; Microsoft Corporation",
+      "source": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/templates/backgrounds/wall2.obj",
+      "license": "MIT",
+      "license_file": "LICENSE-Microsoft-RenderFormer.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/wall2.obj",
+      "sha256": "c27001a11c8ec9bf34ddafa476774847c3b66354a541c1e7ceb293204181bf98",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/wall2_uv-flip.obj",
+      "sha256": "dd668c1d8e180ada24a9aed68a01c1bb81725ec35de555257df15b8eb89bcbf3",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "meshes/wall2_uv.obj",
+      "sha256": "00cd265e8c195d69ff425b014f1400390574185845bc25fd50c729ad735069b2",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "special-objects/cube.obj",
+      "sha256": "4502921431ca58c1b7b83dc3fec62a5102a0087eec1e6edbf518f2a8853712bf",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "special-objects/cube640.obj",
+      "sha256": "7c246763e729321df9dee88ecddbe63a1b974f18ca27a9d2c1630f0dc78cab2b",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "special-objects/cylinder.obj",
+      "sha256": "7e4209b204da1ff65b60105b7082ed8b31435c14872f89536c76f1dcfb53dc8c",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "special-objects/ico_sub1.obj",
+      "sha256": "cb7e59fa6fc31ea93e87885121fe39a2cfb088cd27c4e2be7d8954a93d6afa11",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "special-objects/ico_sub2.obj",
+      "sha256": "27cf45ec7d7922c69bd8d400a8d909b67ba09cd3c2558cbd3ff9a607fd1aa52d",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "special-objects/plane.obj",
+      "sha256": "6037c3954da32d70a18faa65ec55b4d6fd5363e2bf0ed781c7b6973f88cf2f96",
+      "creator": "RenderFormer authors; Microsoft Corporation",
+      "source": "https://github.com/microsoft/renderformer/blob/c51f87083d0eebb806803fe32a357b8d9aefb085/examples/templates/backgrounds/plane.obj",
+      "license": "MIT",
+      "license_file": "LICENSE-Microsoft-RenderFormer.txt",
+      "redistribution_status": "approved"
+    },
+    {
+      "path": "special-objects/plane512.obj",
+      "sha256": "61957615a8aebdf9ce32aab85796cd3b1c7a6d2ddf55cab7d74476c88c3f228e",
+      "creator": "RenderFormer authors",
+      "source": "RenderFormer procedural and scene-template geometry",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "redistribution_status": "approved"
+    }
+  ]
+}

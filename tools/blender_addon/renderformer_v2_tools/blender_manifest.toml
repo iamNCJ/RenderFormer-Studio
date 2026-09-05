@@ -1,0 +1,17 @@
+schema_version = "1.0.0"
+
+id = "renderformer_v2_tools"
+version = "2.0.0"
+name = "RenderFormer V2 Tools"
+tagline = "Export Blender scenes as RenderFormer V2 prepared frames"
+maintainer = "RenderFormer maintainers"
+type = "add-on"
+blender_version_min = "4.5.10"
+blender_version_max = "4.5.11"
+
+website = "https://renderformer.github.io/v2/"
+tags = ["Import-Export"]
+license = ["SPDX:MIT"]
+
+[permissions]
+files = "Write V2 meshes, textures, environments, and scene JSON"

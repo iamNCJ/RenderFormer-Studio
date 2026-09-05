@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "source": "five historical source partitions indexed beneath the two-stage release curriculum",
+  "profile": "training_v1_final",
+  "template_count": 85,
+  "curriculum_stage_count": 2,
+  "dataset_count": 5,
+  "unique_legacy_path_count": 57,
+  "unique_template_path_count": 71,
+  "content_distinct_template_count": 51,
+  "path_policy": "templates are namespaced by data partition because legacy paths are reused across dataset snapshots with different contents; the distinct 250510 distribution reuses retained 250428 files and applies the V1 background correction at generation time",
+  "datasets": [
+    {
+      "name": "250112_mv_data_pure",
+      "partition_key": "render_250112_mv_data_pure",
+      "resolution": 256,
+      "num_viewpoints": 4,
+      "training_paths": [
+        "250112_mv_data_pure/paths.txt",
+        "250112_mv_data_pure/paths_patched.txt"
+      ],
+      "template_count": 8,
+      "templates": [
+        {
+          "legacy_path": "templates/corner-single-object.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/corner-multi-object.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/no-ceil-box-multi.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/no-ceil-box-single.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/plane-multi-object.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/plane-single-object.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/wall-multi-object.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/wall-single-object.jsonc",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "250416_high_res_fixed_bsdf_dev",
+      "partition_key": "render_250416_high_res_fixed_bsdf",
+      "resolution": 512,
+      "num_viewpoints": 4,
+      "training_paths": [
+        "250416_high_res_fixed_bsdf_dev/paths.txt"
+      ],
+      "template_count": 24,
+      "templates": [
+        {
+          "legacy_path": "templates/high-res/corner-multi-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/corner-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/corner-single-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/corner-single-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/no-ceil-box-multi-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/no-ceil-box-multi.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/no-ceil-box-single-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/no-ceil-box-single.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/plane-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/plane-single-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/wall-multi-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/wall-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/wall-single-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/wall-single-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/corner-multi-object-special.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/corner-single-object-special.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/more-tri/corner-multi-object.jsonc",
+          "weight": 2
+        },
+        {
+          "legacy_path": "templates/more-tri/no-ceil-box-multi.jsonc",
+          "weight": 2
+        },
+        {
+          "legacy_path": "templates/more-tri/plane-multi-object.jsonc",
+          "weight": 2
+        },
+        {
+          "legacy_path": "templates/more-tri/wall-multi-object.jsonc",
+          "weight": 2
+        },
+        {
+          "legacy_path": "templates/thin-objects/corner-multi-object.jsonc",
+          "weight": 2
+        },
+        {
+          "legacy_path": "templates/thin-objects/no-ceil-box-multi.jsonc",
+          "weight": 2
+        },
+        {
+          "legacy_path": "templates/thin-objects/plane-multi-object.jsonc",
+          "weight": 2
+        },
+        {
+          "legacy_path": "templates/thin-objects/wall-multi-object.jsonc",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "name": "250418_256_res",
+      "partition_key": "render_250418_256_res",
+      "resolution": 256,
+      "num_viewpoints": 4,
+      "training_paths": [
+        "250418_256_res/paths.txt"
+      ],
+      "template_count": 21,
+      "templates": [
+        {
+          "legacy_path": "templates/corner-single-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/corner-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/corner-no-object.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/corner-multi-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/corner-multi-object-special.jsonc",
+          "weight": 2
+        },
+        {
+          "legacy_path": "templates/corner-single-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/corner-single-object-special.jsonc",
+          "weight": 2
+        },
+        {
+          "legacy_path": "templates/no-ceil-box-multi.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/no-ceil-box-single.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/no-ceil-box-multi-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/no-ceil-box-single-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/no-ceil-box-no.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/plane-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/plane-single-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/plane-no-object.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/wall-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/wall-single-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/wall-no-object.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/wall-multi-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/wall-single-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/thin-objects/plane-single-object.jsonc",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "name": "250428_oxl_high_res",
+      "partition_key": "render_250428_oxl_high_res",
+      "resolution": 512,
+      "num_viewpoints": 4,
+      "training_paths": [
+        "250428_oxl_high_res/merged.txt"
+      ],
+      "template_count": 18,
+      "templates": [
+        {
+          "legacy_path": "templates/high-res/corner-multi-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/corner-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/corner-single-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/corner-single-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/no-ceil-box-multi-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/no-ceil-box-multi.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/no-ceil-box-single-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/no-ceil-box-single.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/plane-multi-object.jsonc",
+          "weight": 4
+        },
+        {
+          "legacy_path": "templates/high-res/plane-single-object.jsonc",
+          "weight": 4
+        },
+        {
+          "legacy_path": "templates/high-res/wall-multi-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/wall-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res/wall-single-object-patch.jsonc",
+          "weight": 1
+        },
+        {
+          "legacy_path": "templates/high-res/wall-single-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/more-tri/corner-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/more-tri/no-ceil-box-multi.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/more-tri/plane-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/more-tri/wall-multi-object.jsonc",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "name": "250510_fix_template_bias",
+      "partition_key": "render_250510_fix_template_bias",
+      "resolution": 512,
+      "num_viewpoints": 4,
+      "training_paths": [
+        "250510_fix_template_bias/merged.txt"
+      ],
+      "template_count": 14,
+      "templates": [
+        {
+          "legacy_path": "templates/high-res-fix-topo/corner-multi-object.jsonc",
+          "path": "v1/250428_oxl_high_res/high-res/corner-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res-fix-topo/corner-single-object.jsonc",
+          "path": "v1/250428_oxl_high_res/high-res/corner-single-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res-fix-topo/no-ceil-box-multi-patch.jsonc",
+          "path": "v1/250428_oxl_high_res/high-res/no-ceil-box-multi-patch.jsonc",
+          "weight": 2
+        },
+        {
+          "legacy_path": "templates/high-res-fix-topo/no-ceil-box-multi.jsonc",
+          "path": "v1/250428_oxl_high_res/high-res/no-ceil-box-multi.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res-fix-topo/no-ceil-box-single-patch.jsonc",
+          "path": "v1/250428_oxl_high_res/high-res/no-ceil-box-single-patch.jsonc",
+          "weight": 2
+        },
+        {
+          "legacy_path": "templates/high-res-fix-topo/no-ceil-box-single.jsonc",
+          "path": "v1/250428_oxl_high_res/high-res/no-ceil-box-single.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res-fix-topo/plane-multi-object.jsonc",
+          "path": "v1/250428_oxl_high_res/high-res/plane-multi-object.jsonc",
+          "weight": 4
+        },
+        {
+          "legacy_path": "templates/high-res-fix-topo/plane-single-object.jsonc",
+          "path": "v1/250428_oxl_high_res/high-res/plane-single-object.jsonc",
+          "weight": 4
+        },
+        {
+          "legacy_path": "templates/high-res-fix-topo/wall-multi-object.jsonc",
+          "path": "v1/250428_oxl_high_res/high-res/wall-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/high-res-fix-topo/wall-single-object.jsonc",
+          "path": "v1/250428_oxl_high_res/high-res/wall-single-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/more-tri-fix-topo/corner-multi-object.jsonc",
+          "path": "v1/250428_oxl_high_res/more-tri/corner-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/more-tri-fix-topo/no-ceil-box-multi.jsonc",
+          "path": "v1/250428_oxl_high_res/more-tri/no-ceil-box-multi.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/more-tri-fix-topo/plane-multi-object.jsonc",
+          "path": "v1/250428_oxl_high_res/more-tri/plane-multi-object.jsonc",
+          "weight": 3
+        },
+        {
+          "legacy_path": "templates/more-tri-fix-topo/wall-multi-object.jsonc",
+          "path": "v1/250428_oxl_high_res/more-tri/wall-multi-object.jsonc",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}

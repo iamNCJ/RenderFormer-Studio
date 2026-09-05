@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "source": "Public semantic template inventory for the eight V2 curriculum stages",
+  "profile": "training_v2_200m_curriculum",
+  "curriculum_stage_count": 8,
+  "active_recipe_variant_count": 8,
+  "scope": "Template groups used by the published V2 200M data recipes",
+  "template_count": 84,
+  "unique_template_path_count": 84,
+  "groups": {
+    "1k-no-env-no-volume": 7,
+    "1k-no-env-no-volume-texture-mix": 7,
+    "1k-no-env-no-volume-homogeneous": 7,
+    "1k-env-volume": 7,
+    "4k-env-volume": 14,
+    "16k-env-volume": 14,
+    "16k-refraction-env": 7,
+    "16k-refraction-no-env": 7,
+    "64k-env-volume": 14
+  },
+  "templates": [
+    {
+      "path": "full-new-volume/1k-no-env-no-volume/corner-single-object-patch.jsonc",
+      "group": "1k-no-env-no-volume"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume/corner-single-object.jsonc",
+      "group": "1k-no-env-no-volume"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume/no-ceil-box-single-patch.jsonc",
+      "group": "1k-no-env-no-volume"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume/no-ceil-box-single.jsonc",
+      "group": "1k-no-env-no-volume"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume/plane-single-object.jsonc",
+      "group": "1k-no-env-no-volume"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume/wall-single-object-patch.jsonc",
+      "group": "1k-no-env-no-volume"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume/wall-single-object.jsonc",
+      "group": "1k-no-env-no-volume"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-texture-mix/corner-single-object-patch.jsonc",
+      "group": "1k-no-env-no-volume-texture-mix"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-texture-mix/corner-single-object.jsonc",
+      "group": "1k-no-env-no-volume-texture-mix"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-texture-mix/no-ceil-box-single-patch.jsonc",
+      "group": "1k-no-env-no-volume-texture-mix"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-texture-mix/no-ceil-box-single.jsonc",
+      "group": "1k-no-env-no-volume-texture-mix"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-texture-mix/plane-single-object.jsonc",
+      "group": "1k-no-env-no-volume-texture-mix"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-texture-mix/wall-single-object-patch.jsonc",
+      "group": "1k-no-env-no-volume-texture-mix"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-texture-mix/wall-single-object.jsonc",
+      "group": "1k-no-env-no-volume-texture-mix"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-homogeneous/corner-single-object-patch.jsonc",
+      "group": "1k-no-env-no-volume-homogeneous"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-homogeneous/corner-single-object.jsonc",
+      "group": "1k-no-env-no-volume-homogeneous"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-homogeneous/no-ceil-box-single-patch.jsonc",
+      "group": "1k-no-env-no-volume-homogeneous"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-homogeneous/no-ceil-box-single.jsonc",
+      "group": "1k-no-env-no-volume-homogeneous"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-homogeneous/plane-single-object.jsonc",
+      "group": "1k-no-env-no-volume-homogeneous"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-homogeneous/wall-single-object-patch.jsonc",
+      "group": "1k-no-env-no-volume-homogeneous"
+    },
+    {
+      "path": "full-new-volume/1k-no-env-no-volume-homogeneous/wall-single-object.jsonc",
+      "group": "1k-no-env-no-volume-homogeneous"
+    },
+    {
+      "path": "full-new-volume/1k-env-volume/corner-single-object-patch.jsonc",
+      "group": "1k-env-volume"
+    },
+    {
+      "path": "full-new-volume/1k-env-volume/corner-single-object.jsonc",
+      "group": "1k-env-volume"
+    },
+    {
+      "path": "full-new-volume/1k-env-volume/no-ceil-box-single-patch.jsonc",
+      "group": "1k-env-volume"
+    },
+    {
+      "path": "full-new-volume/1k-env-volume/no-ceil-box-single.jsonc",
+      "group": "1k-env-volume"
+    },
+    {
+      "path": "full-new-volume/1k-env-volume/plane-single-object.jsonc",
+      "group": "1k-env-volume"
+    },
+    {
+      "path": "full-new-volume/1k-env-volume/wall-single-object-patch.jsonc",
+      "group": "1k-env-volume"
+    },
+    {
+      "path": "full-new-volume/1k-env-volume/wall-single-object.jsonc",
+      "group": "1k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/corner-multi-object-patch.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/corner-multi-object.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/corner-single-object-patch.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/corner-single-object.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/no-ceil-box-multi-patch.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/no-ceil-box-multi.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/no-ceil-box-single-patch.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/no-ceil-box-single.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/plane-multi-object.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/plane-single-object.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/wall-multi-object-patch.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/wall-multi-object.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/wall-single-object-patch.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/4k-env-volume/wall-single-object.jsonc",
+      "group": "4k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/corner-multi-object-patch.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/corner-multi-object.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/corner-single-object-patch.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/corner-single-object.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/no-ceil-box-multi-patch.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/no-ceil-box-multi.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/no-ceil-box-single-patch.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/no-ceil-box-single.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/plane-multi-object.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/plane-single-object.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/wall-multi-object-patch.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/wall-multi-object.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/wall-single-object-patch.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-env-volume/wall-single-object.jsonc",
+      "group": "16k-env-volume"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-env/corner-multi-object-patch.jsonc",
+      "group": "16k-refraction-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-env/corner-multi-object.jsonc",
+      "group": "16k-refraction-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-env/no-ceil-box-multi-patch.jsonc",
+      "group": "16k-refraction-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-env/no-ceil-box-multi.jsonc",
+      "group": "16k-refraction-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-env/plane-multi-object.jsonc",
+      "group": "16k-refraction-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-env/wall-multi-object-patch.jsonc",
+      "group": "16k-refraction-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-env/wall-multi-object.jsonc",
+      "group": "16k-refraction-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-no-env/corner-multi-object-patch.jsonc",
+      "group": "16k-refraction-no-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-no-env/corner-multi-object.jsonc",
+      "group": "16k-refraction-no-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-no-env/no-ceil-box-multi-patch.jsonc",
+      "group": "16k-refraction-no-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-no-env/no-ceil-box-multi.jsonc",
+      "group": "16k-refraction-no-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-no-env/plane-multi-object.jsonc",
+      "group": "16k-refraction-no-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-no-env/wall-multi-object-patch.jsonc",
+      "group": "16k-refraction-no-env"
+    },
+    {
+      "path": "full-new-volume/16k-refraction-no-env/wall-multi-object.jsonc",
+      "group": "16k-refraction-no-env"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/corner-multi-object-patch.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/corner-multi-object.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/corner-single-object-patch.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/corner-single-object.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/no-ceil-box-multi-patch.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/no-ceil-box-multi.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/no-ceil-box-single-patch.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/no-ceil-box-single.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/plane-multi-object.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/plane-single-object.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/wall-multi-object-patch.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/wall-multi-object.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/wall-single-object-patch.jsonc",
+      "group": "64k-env-volume"
+    },
+    {
+      "path": "full-new-volume/64k-env-volume/wall-single-object.jsonc",
+      "group": "64k-env-volume"
+    }
+  ]
+}

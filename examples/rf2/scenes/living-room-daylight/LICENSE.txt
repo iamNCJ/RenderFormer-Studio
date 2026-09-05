@@ -1,0 +1,11 @@
+"The White Room" by Jay-Artist.
+
+Original source: BlendSwap scene 41683 (historical page no longer resolves)
+Maintained conversion and source record: https://benedikt-bitterli.me/resources/
+License: CC BY 3.0, https://creativecommons.org/licenses/by/3.0/
+Full license text: ../../../../licenses/CC-BY-3.0.txt
+
+Changes: modified and exported for RenderFormer.
+
+The external environment map referenced by the RenderFormer config is not
+covered by this notice and is intentionally not bundled.

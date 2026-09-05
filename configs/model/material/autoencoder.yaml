@@ -1,0 +1,4 @@
+architecture: MaterialAutoencoder
+latent_dim: 9
+image_channels: 3
+image_size: 256

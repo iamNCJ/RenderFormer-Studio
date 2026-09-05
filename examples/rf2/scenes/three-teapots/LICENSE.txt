@@ -1,0 +1,27 @@
+This is a RenderFormer export derived from "Veach, Ajar" by Benedikt
+Bitterli, downloaded from https://benedikt-bitterli.me/resources/.
+
+The source scene was released under CC0 1.0 and is in the public domain. It
+may be copied, modified, and used commercially without permission or
+attribution. Crediting the artist is encouraged.
+
+License: https://creativecommons.org/publicdomain/zero/1.0/
+
+Changes: geometry and materials were modified, simplified, and exported for
+RenderFormer. The bundled frame is the 17,653-token paper frame_000004 with
+the textured rough teapot.
+
+Three materials added to the RenderFormer Blender scene are also CC0:
+
+- ambientCG "Asphalt 021": https://ambientcg.com/view?id=Asphalt021
+  The exporter derived the four maps under
+  split/teapot-4k-no-interior_002/ from this asset.
+- ambientCG "Fabric 051": https://ambientcg.com/view?id=Fabric051
+  The exporter derived the four maps under split/Cube/ from this asset.
+- ambientCG "Wood Floor 060": https://ambientcg.com/view?id=WoodFloor060
+  The exporter derived the four maps under split/object/ from this asset with
+  texture-augmentation seed 42.
+
+The exported maps were converted and resized for RenderFormer and are not
+byte-for-byte copies of the source downloads. The complete CC0 1.0 legal text
+is at ../../../../licenses/CC0-1.0.txt.

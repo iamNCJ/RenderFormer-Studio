@@ -1,0 +1,7 @@
+# Lightweight RenderFormer data core. Optional workflows are declared once in
+# pyproject.toml and can be selected explicitly, for example:
+#   python -m pip install -e ".[loaders]"
+#   python -m pip install -e ".[inference]"
+#   python -m pip install -e ".[training]"
+# Blender data generation uses pinned PyPI bpy; see environments/README.md.
+-e .

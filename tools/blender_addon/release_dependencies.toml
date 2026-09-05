@@ -1,0 +1,22 @@
+schema_version = 1
+python_version = "3.11"
+
+# Every transitive runtime dependency is listed explicitly because the release
+# builder downloads with --no-deps. Exact versions make a platform-local build
+# repeatable; WHEEL_INVENTORY.json records the concrete artifact hashes.
+[packages.renderformer_v1_tools]
+requirements = [
+  "numpy==1.26.4",
+  "h5py==3.14.0",
+  "networkx==3.4.2",
+  "trimesh==4.7.1",
+  "OpenEXR==3.4.15",
+  "simple-exr==0.0.0",
+]
+
+[packages.renderformer_v2_tools]
+requirements = [
+  "numpy==1.26.4",
+  "imageio==2.37.0",
+  "Pillow==11.3.0",
+]
